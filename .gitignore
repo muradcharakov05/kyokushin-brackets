@@ -1,0 +1,16 @@
+target/
+data/
+.tools/
+.env
+.env.*
+!.env.example
+*.log
+*.docx
+*.xlsx
+*.csv
+*.pdf
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db

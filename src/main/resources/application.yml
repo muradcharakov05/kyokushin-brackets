@@ -1,0 +1,19 @@
+server:
+  address: ${SERVER_ADDRESS:127.0.0.1}
+  port: ${PORT:8080}
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 11MB
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/kyokushin}
+    username: ${DB_USER:kyokushin}
+    password: ${DB_PASSWORD:}
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: validate
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
